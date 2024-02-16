@@ -9,7 +9,7 @@ const Header = () => {
       <PromoBanner />
       <div className="flex justify-between px-[135px]  pt-[40px] pb-[16px] border-b-2 border-gray-300">
         <div className="text-[24px] font-700 cursor-pointer">Exclusive</div>
-        <ul className="flex text-[14px] font-400 gap-12 items-center">
+        <ul className="flex text-[14px] font-500 gap-12 items-center">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Contact</li>
           <li className="cursor-pointer">About</li>
