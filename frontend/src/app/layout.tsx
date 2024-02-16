@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}`}>{children}</body>
+      <body className={`${poppins.variable} max-w-[1920px] mx-auto`}>
+        {children}
+      </body>
     </html>
   );
 }
