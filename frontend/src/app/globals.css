@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 body{
     font-family: var(--font-poppins);
+}
+
+.slick-track{
+    height: 100% !important;
+}
+.slick-dots{
+    @apply bottom-5 
+}
+.slick-dots li {
+    @apply size-3 bg-white opacity-50 rounded-full
+}
+
+.slick-dots .slick-active{
+    @apply size-3 bg-white opacity-100 rounded-full
+}
+.slick-dots li button::before{
+    display: none;
 }
