@@ -25,3 +25,7 @@ body{
 .slick-dots li button::before{
     display: none;
 }
+
+.relative:hover .absolute {
+    opacity: 1;
+}
