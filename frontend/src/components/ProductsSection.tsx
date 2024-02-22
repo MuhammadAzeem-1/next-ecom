@@ -1,11 +1,8 @@
 "use client";
 
-import React from "react";
-import SectionHeader from "./common/SectionHeader";
-import Card from "./common/Card";
 import { productList2, services } from "@/utils/dummyData";
-
-import { TbTruckDelivery } from "react-icons/tb";
+import Card from "./common/Card";
+import SectionHeader from "./common/SectionHeader";
 
 import Image from "next/image";
 
@@ -13,9 +10,7 @@ const ProductsSection = () => {
   return (
     <section>
       <SectionHeader
-        timer={false}
-        arrows={true}
-        button={false}
+        arrows
         sectionHeading={"Explore Our Products"}
         sectionName={"Our Products"}
       />
@@ -34,9 +29,6 @@ const ProductsSection = () => {
 
       <section>
         <SectionHeader
-          timer={false}
-          arrows={false}
-          button={false}
           sectionHeading={"New Arrival"}
           sectionName={"Featured"}
         />

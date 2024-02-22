@@ -1,10 +1,6 @@
 import React from "react";
-
-import { TiStarFullOutline } from "react-icons/ti";
-import { TiStarOutline } from "react-icons/ti";
-import { TiStarHalfOutline } from "react-icons/ti";
-import { FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
+import Icons from "@/utils/icons";
 
 const Card = ({ item }: any) => {
   return (
@@ -19,7 +15,7 @@ const Card = ({ item }: any) => {
             <p></p>
           )}
           <button className="bg-white p-[0.5rem] rounded-[50%]">
-            <FaRegHeart size={20} />
+            {Icons.FaRegHeart(20)}
           </button>
         </div>
         <div className="flex justify-center">
@@ -53,14 +49,14 @@ const Card = ({ item }: any) => {
       <div className="flex items-center gap-4 pt-[5px]">
         <div className="flex items-center">
           {/* Temporary */}
-          <TiStarFullOutline size={20} className="text-[#ffad33]" />
-          <TiStarFullOutline size={20} className="text-[#ffad33]" />
-          <TiStarFullOutline size={20} className="text-[#ffad33]" />
-          <TiStarHalfOutline size={20} className="text-[#ffad33]" />
-          <TiStarOutline size={20} className="text-[#ffad33]" />
+          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
+          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
+          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
+          {Icons.TiStarHalfOutline(20, "text-[#ffad33]")}
+          {Icons.TiStarOutline(20, "text-[#ffad33]")}
         </div>
 
-        <p className="font-[8px] font-500 text-[#9f9f9f] ">({item.reviews})</p>
+        <p className="text-[12px] font-500 text-[#9f9f9f] ">({item.reviews})</p>
       </div>
     </div>
   );

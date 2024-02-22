@@ -1,13 +1,4 @@
-import { TfiMobile } from "react-icons/tfi";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { TbDeviceWatchStats } from "react-icons/tb";
-import { HiOutlineCamera } from "react-icons/hi";
-import { CiHeadphones } from "react-icons/ci";
-import { TbTruckDelivery } from "react-icons/tb";
-import { RiCustomerServiceLine } from "react-icons/ri";
-import { AiOutlineSafetyCertificate } from "react-icons/ai";
-
-import { TbDeviceGamepad } from "react-icons/tb";
+import Icons from "./icons";
 
 export const productList = [
   {
@@ -118,32 +109,32 @@ export const categories = [
   {
     id: 1,
     name: "phone",
-    icon: <TfiMobile size={40} />,
+    icon: Icons.TfiMobile(40),
   },
   {
     id: 2,
     name: "Computer",
-    icon: <HiOutlineComputerDesktop size={40} />,
+    icon: Icons.HiOutlineComputerDesktop(40)
   },
   {
     id: 3,
     name: "SmartWatch",
-    icon: <TbDeviceWatchStats size={40} />,
+    icon: Icons.TbDeviceWatchStats(40)
   },
   {
     id: 4,
     name: "Camera",
-    icon: <HiOutlineCamera size={40} />,
+    icon: Icons.HiOutlineCamera(40)
   },
   {
     id: 5,
     name: "Headphones",
-    icon: <CiHeadphones size={40} />,
+    icon: Icons.CiHeadphones(40)
   },
   {
     id: 6,
     name: "Gaming",
-    icon: <CiHeadphones size={40} />,
+    icon: Icons.CiHeadphones(40)
   },
 ];
 
@@ -152,18 +143,18 @@ export const services = [
     id: 1,
     name: "FREE AND FAST DELIVERY",
     para: "Free delivery for all orders over $140",
-    icon: <TbTruckDelivery size={30} />,
+    icon: Icons.TbTruckDelivery(30)
   },
   {
     id: 2,
     name: "24/7 CUSTOMER SERVICE",
     para: "Friendly 24/7 customer support",
-    icon: <RiCustomerServiceLine size={30} />,
+    icon: Icons.RiCustomerServiceLine(30)
   },
   {
     id: 3,
     name: "MONEY BACK GUARANTEE",
     para: "We reurn money within 30 days",
-    icon: <AiOutlineSafetyCertificate size={30} />,
+    icon: Icons.AiOutlineSafetyCertificate(30)
   },
 ];

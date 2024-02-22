@@ -11,9 +11,7 @@ const BestProducts = () => {
   return (
     <section className="mt-[2rem] tab:mt-[5rem]">
       <SectionHeader
-        timer={false}
-        arrows={false}
-        button={true}
+        button
         sectionHeading={"Best Selling Products"}
         sectionName={"This Month"}
       />
