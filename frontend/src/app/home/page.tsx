@@ -10,13 +10,11 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <Header />
       <BannerSlide />
       <FlashSales />
       <Categories />
       <BestProducts />
       <ProductsSection />
-      <Footer />
     </div>
   );
 };

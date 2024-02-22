@@ -1,9 +1,10 @@
-import { TiStarFullOutline } from "react-icons/ti";
-import { TiStarOutline } from "react-icons/ti";
-import { TiStarHalfOutline } from "react-icons/ti";
+import {
+  TiStarFullOutline,
+  TiStarOutline,
+  TiStarHalfOutline,
+} from "react-icons/ti";
 import { FaRegHeart } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { CiHeadphones } from "react-icons/ci";
 import { HiOutlineCamera } from "react-icons/hi";

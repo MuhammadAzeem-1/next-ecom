@@ -49,11 +49,11 @@ const Card = ({ item }: any) => {
       <div className="flex items-center gap-4 pt-[5px]">
         <div className="flex items-center">
           {/* Temporary */}
-          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
-          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
-          {Icons.TiStarFullOutline(20, "text-[#ffad33]")}
-          {Icons.TiStarHalfOutline(20, "text-[#ffad33]")}
-          {Icons.TiStarOutline(20, "text-[#ffad33]")}
+          {Icons.TiStarFullOutline(20, "text-yellowClr")}
+          {Icons.TiStarFullOutline(20, "text-yellowClr")}
+          {Icons.TiStarFullOutline(20, "text-yellowClr")}
+          {Icons.TiStarHalfOutline(20, "text-yellowClr")}
+          {Icons.TiStarOutline(20, "text-yellowClr")}
         </div>
 
         <p className="text-[12px] font-500 text-[#9f9f9f] ">({item.reviews})</p>

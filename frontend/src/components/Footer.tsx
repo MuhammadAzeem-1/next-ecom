@@ -1,5 +1,4 @@
 import React from "react";
-import InputComponent from "./InputComponent";
 import Image from "next/image";
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
           text: "Get 10% off your first order",
         },
       ],
-      component: <InputComponent />,
+      component: null,
     },
     {
       title: "Support",
@@ -80,7 +79,9 @@ const Footer = () => {
   function RenderLinksAndQR() {
     return (
       <div>
-        <p className="text-[12px]">Save $3 with App New User Only</p>
+        <p className="text-[10px] tab:text-[12px]">
+          Save $3 with App New User Only
+        </p>
         <div className="pt-3 flex gap-3">
           <Image src="/assets/images/QR.jpg" height={76} width={76} alt="QR" />
           <div className="flex flex-col justify-between gap-2">
@@ -104,15 +105,18 @@ const Footer = () => {
     );
   }
   return (
-    <div className="bg-black text-textWhite mt-10 px-32 py-20 flex justify-between">
+    <footer className="bg-black text-textWhite mt-6 px-6 tab:px-16 md:px-32 py-10 tab:py-20 flex justify-start tab:justify-between flex-wrap gap-y-5">
       {footerData?.map((column, i) => {
         return (
-          <div key={i + 1} className="max-w-[200px]">
-            <p className="text-[22px] font-600 leading-[22px] pb-5">
+          <div key={i + 1} className="tab:max-w-[200px] w-[50%] tab:w-auto">
+            <p className="text-[14px] tab:text-[18px] leading-[18px] des:text-[22px] font-600 des:leading-[22px] pb-1 tab:pb-3 des:pb-5">
               {column?.title}
             </p>
             {column?.children?.map((option, i) => (
-              <p key={`sub-${i + 1}`} className="text-[14px] py-2">
+              <p
+                key={`sub-${i + 1}`}
+                className="text-[10px] tab:text-[12px] des:text-[14px] py-[2px] tab:py-1 des:py-2"
+              >
                 {option?.text}
               </p>
             ))}
@@ -120,7 +124,7 @@ const Footer = () => {
           </div>
         );
       })}
-    </div>
+    </footer>
   );
 };
 

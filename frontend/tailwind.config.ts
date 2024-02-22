@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         textWhite: "#FAFAFA",
         lightGray: "#F5F5F5",
+        yellowClr:"#ffad33",
+        lightGreen:"#00FF66"
       },
       fontWeight: {
         "400": "400",
