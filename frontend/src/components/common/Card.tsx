@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "@/utils/icons";
+import Link from "next/link";
+import { PRODUCT_PAGE_LINK } from "@/utils/constant";
 
 const Card = ({ item }: any) => {
   return (
-    <div className="">
+    <Link href={`${PRODUCT_PAGE_LINK}/2`} className="">
       <div className="relative w-[17rem] tab-lg:w-[20rem] des:w-[17rem] h-[14rem] tab:h-[17rem] bg-[#f5f5f5] p-4 rounded">
         <div className="flex justify-between">
           {item.sale ? (
@@ -58,7 +60,7 @@ const Card = ({ item }: any) => {
 
         <p className="text-[12px] font-500 text-[#9f9f9f] ">({item.reviews})</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
