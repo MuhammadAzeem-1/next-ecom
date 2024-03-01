@@ -7,6 +7,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { productList2 } from "@/utils/dummyData";
+import { CHECKOUT_PAGE_LINK } from "@/utils/constant";
+import Link from "next/link";
 
 const Cart = () => {
   const [isAmount, setIsAmount] = useState(1);
@@ -168,7 +170,7 @@ const Cart = () => {
 
               <div className="flex justify-center ">
                 <button className="text-[12px] tab:text-[16px] px-1 py-1  bg-[#db4444] tab:px-8 tab:py-2 capitalize rounded text-white tab">
-                  Process To Checkout
+                  <Link href={CHECKOUT_PAGE_LINK}> Process To Checkout</Link>
                 </button>
               </div>
             </div>

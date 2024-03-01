@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ["latin"] });
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} max-w-[1920px] mx-auto`}>
+        <NextTopLoader color="#DB4444" height={4} showSpinner={false} />
         <Header />
         {children}
         <ToastContainer />

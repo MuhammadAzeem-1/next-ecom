@@ -2,6 +2,7 @@ import {
   TiStarFullOutline,
   TiStarOutline,
   TiStarHalfOutline,
+  TiStar,
 } from "react-icons/ti";
 import { FaRegHeart } from "react-icons/fa";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
@@ -12,6 +13,7 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { RiCustomerServiceLine } from "react-icons/ri";
 import { TbDeviceWatchStats, TbTruckDelivery } from "react-icons/tb";
 import { TfiMobile } from "react-icons/tfi";
+import { PiArrowsClockwiseFill } from "react-icons/pi";
 import { RxEyeNone } from "react-icons/rx";
 import { RxEyeClosed } from "react-icons/rx";
 import { RiDeleteBinLine } from "react-icons/ri";
@@ -65,6 +67,13 @@ const Icons = {
   TfiMobile: (size: sizeType = undefined, className: string = "") => (
     <TfiMobile size={size} className={className} />
   ),
+  TiStar: (size: sizeType = undefined, className: string = "") => (
+    <TiStar size={size} className={className} />
+  ),
+  PiArrowsClockwiseFill: (
+    size: sizeType = undefined,
+    className: string = ""
+  ) => <PiArrowsClockwiseFill size={size} className={className} />,
   RxEyeClosed: (size: sizeType = undefined, className: string = "") => (
     <RxEyeClosed size={size} className={className} />
   ),

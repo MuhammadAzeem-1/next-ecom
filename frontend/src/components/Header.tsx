@@ -3,16 +3,27 @@ import React, { useState } from "react";
 import PromoBanner from "./PromoBanner";
 import InputComponent from "./InputComponent";
 import Image from "next/image";
+import { CART_PAGE_LINK, NAV_ITEMS } from "@/utils/constant";
+import Link from "next/link";
 
 const DesktopNav = () => {
   return (
     <div className="hidden des:flex justify-between px-[90px] des-md:px-[135px]  pt-[40px] pb-[16px] border-b-2 border-gray-300">
       <div className="text-[24px] font-700 cursor-pointer">Exclusive</div>
       <ul className="flex text-[14px] font-500 gap-12 items-center">
-        <li className="cursor-pointer">Home</li>
-        <li className="cursor-pointer">Contact</li>
-        <li className="cursor-pointer">About</li>
-        <li className="cursor-pointer">Sign Up</li>
+        {NAV_ITEMS?.map((item) => {
+          const { text, redirectionLink } = { ...item };
+          const customClass = redirectionLink
+            ? "cursor-pointer"
+            : "cursor-not-allowed";
+          return (
+            <li key={text}>
+              <Link className={customClass} href={redirectionLink}>
+                {text}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
       <div className="flex gap-6">
         <InputComponent />
@@ -24,13 +35,15 @@ const DesktopNav = () => {
             height={32}
             className="cursor-pointer"
           />
-          <Image
-            alt="whislist icon"
-            src="/assets/images/cartIcon.svg"
-            width={32}
-            height={32}
-            className="cursor-pointer"
-          />
+          <Link href={CART_PAGE_LINK}>
+            <Image
+              alt="whislist icon"
+              src="/assets/images/cartIcon.svg"
+              width={32}
+              height={32}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
       </div>
     </div>
