@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import PromoBanner from "./PromoBanner";
 import InputComponent from "./InputComponent";
 import Image from "next/image";
-import { NAV_ITEMS } from "@/utils/constant";
+import { CART_PAGE_LINK, NAV_ITEMS } from "@/utils/constant";
 import Link from "next/link";
 
 const DesktopNav = () => {
@@ -35,13 +35,15 @@ const DesktopNav = () => {
             height={32}
             className="cursor-pointer"
           />
-          <Image
-            alt="whislist icon"
-            src="/assets/images/cartIcon.svg"
-            width={32}
-            height={32}
-            className="cursor-pointer"
-          />
+          <Link href={CART_PAGE_LINK}>
+            <Image
+              alt="whislist icon"
+              src="/assets/images/cartIcon.svg"
+              width={32}
+              height={32}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -14,6 +14,9 @@ import { RiCustomerServiceLine } from "react-icons/ri";
 import { TbDeviceWatchStats, TbTruckDelivery } from "react-icons/tb";
 import { TfiMobile } from "react-icons/tfi";
 import { PiArrowsClockwiseFill } from "react-icons/pi";
+import { RxEyeNone } from "react-icons/rx";
+import { RxEyeClosed } from "react-icons/rx";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 type sizeType = number | string | undefined;
 
@@ -71,6 +74,16 @@ const Icons = {
     size: sizeType = undefined,
     className: string = ""
   ) => <PiArrowsClockwiseFill size={size} className={className} />,
+  RxEyeClosed: (size: sizeType = undefined, className: string = "") => (
+    <RxEyeClosed size={size} className={className} />
+  ),
+  RxEyeNone: (size: sizeType = undefined, className: string = "") => {
+    <RxEyeNone size={size} className={className} />;
+  },
+
+  RiDeleteBinLine: (size: sizeType = undefined, className: string = "") => {
+    <RiDeleteBinLine size={size} className={className} />;
+  },
 };
 
 export default Icons;
