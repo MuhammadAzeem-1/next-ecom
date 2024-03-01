@@ -7,7 +7,7 @@ interface types {
   arrows?: boolean;
   button?: boolean;
   sectionName: String;
-  sectionHeading: String;
+  sectionHeading?: String;
 }
 
 const SectionHeader = ({
@@ -29,9 +29,11 @@ const SectionHeader = ({
       </div>
       <div className="flex justify-between items-center m-auto mx-[1rem] des:mx-[8rem] tab-lg:mx-[8rem] pt-4">
         <div className="flex tab:gap-[9rem]  items-center gap-[4rem]">
-          <h1 className="font-semibold text-[16px] tracking-wide  tab-lg:text-[36px] tab:text-[22px]">
-            {sectionHeading}
-          </h1>
+          {!!sectionHeading && (
+            <h1 className="font-semibold text-[16px] tracking-wide  tab-lg:text-[36px] tab:text-[22px]">
+              {sectionHeading}
+            </h1>
+          )}
           {timer && (
             <div>
               <CountdownTimer deadline={deadline} />
