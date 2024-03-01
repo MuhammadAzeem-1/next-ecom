@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "@/utils/icons";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 const Card = ({ item }: any) => {
   return (
@@ -15,7 +16,7 @@ const Card = ({ item }: any) => {
             <p></p>
           )}
           <button className="bg-white p-[0.5rem] rounded-[50%]">
-            {Icons.FaRegHeart(20)}
+            {true ? Icons.FaRegHeart(20) : <RiDeleteBinLine size={20} />}
           </button>
         </div>
         <div className="flex justify-center">

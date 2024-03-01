@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ["latin"] });
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -27,6 +30,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} max-w-[1920px] mx-auto`}>
         <Header />
         {children}
+        <ToastContainer />
         <Footer />
       </body>
     </html>
