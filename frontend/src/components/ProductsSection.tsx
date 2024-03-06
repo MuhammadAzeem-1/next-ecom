@@ -32,7 +32,7 @@ const ProductsSection = () => {
           sectionHeading={"New Arrival"}
           sectionName={"Featured"}
         />
-        <div className="flex mx-4 tab:mx-[8rem] m-auto gap-2 tab:gap-6">
+        <div className="flex flex-col des:flex-row mx-4 tab:mx-[8rem] m-auto gap-2 tab:gap-6">
           <div>
             <Image
               src="/assets/images/PS5.svg"
@@ -53,7 +53,7 @@ const ProductsSection = () => {
                 className="cursor-pointer"
               />
             </div>
-            <div className="flex  gap-2 tab:gap-6 ">
+            <div className="flex flex-col tab-lg:flex-row gap-2 tab:gap-6 ">
               <Image
                 src={"/assets/images/speakers.svg"}
                 alt="speakers"

@@ -96,15 +96,9 @@ const MobileNav = () => {
           />
           <InputComponent />
           <ul className="flex flex-col text-[14px] font-500 items-center bg-white  px-3 py-3">
-            <li className="cursor-pointer border-b-2 border-gray-400 w-full text-center py-3">
-              Contact
-            </li>
-            <li className="cursor-pointer border-b-2 border-gray-400 w-full text-center py-3">
-              Home
-            </li>
-            <li className="cursor-pointer border-b-2 border-gray-400 w-full text-center py-3">
-              About
-            </li>
+            <li className="header-li">Contact</li>
+            <li className="header-li">Home</li>
+            <li className="header-li">About</li>
             <li className="cursor-pointer w-full text-center py-3">Sign Up</li>
           </ul>
         </div>

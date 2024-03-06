@@ -40,6 +40,31 @@ body {
   opacity: 1;
 }
 
+.header-li {
+  @apply cursor-pointer border-b-2 border-gray-400 w-full text-center py-3;
+}
+
+.countdownTimer-block {
+  @apply flex flex-col gap-[5px] items-center;
+}
+
+.countdownTimer-block-para {
+  @apply text-[12px] font-[500] des:text-[16px];
+}
+
+.countdownTimer-block-colon {
+  @apply text-[#db4444] px-2 text-[26px] font-700;
+}
+
+.countdownTimer-block-para2 {
+  @apply font-[700] text-[22px] des:text-[32px];
+}
+
+.cart-box-shadow {
+  box-shadow: 1px 1px 13px 9px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 1px 1px 13px 9px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 1px 1px 13px 9px rgba(0, 0, 0, 0.13);
+}
 @media only screen and (max-width: 1024px) {
   .auth {
     background-image: none;

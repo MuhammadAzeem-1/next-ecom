@@ -13,6 +13,7 @@ const FlashSales = () => {
         button
         sectionName={"Today's"}
         sectionHeading={"Flash Sales"}
+        timer={true}
       />
       <div className="flex tab-lg:ml-[8rem] des:ml-[8rem] ml-[1rem] pt-8 gap-[1rem] tab:gap-[2rem] overflow-hidden">
         {productList.map((item: any) => (

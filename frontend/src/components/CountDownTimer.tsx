@@ -37,30 +37,30 @@ const CountdownTimer: React.FC<{ deadline: string }> = ({ deadline }) => {
   return (
     <>
       <div className="hidden flex gap-[0.6rem] items-center capitalize tab:inline-flex">
-        <div className="flex flex-col gap-[5px] items-center">
-          <p className="text-[12px] font-[500] des:text-[16px]">Days</p>
-          <p className="font-[700] text-[22px] des:text-[32px]">
+        <div className="countdownTimer-block">
+          <p className="countdownTimer-block-para">Days</p>
+          <p className="countdownTimer-block-para2 ">
             {timeLeft.days > 0 ? timeLeft.days : 0}
           </p>
         </div>
-        <span className="text-[#db4444] px-2 text-[26px] font-700">:</span>
-        <div className="flex flex-col gap-[5px] items-center">
-          <p className="text-[12px] font-[500] des:text-[16px]">Hours</p>
-          <p className="font-[700] text-[22px] des:text-[32px]">
+        <span className="countdownTimer-block-colon">:</span>
+        <div className="countdownTimer-block">
+          <p className="countdownTimer-block-para">Hours</p>
+          <p className="countdownTimer-block-para2 ">
             {timeLeft.hours > 0 ? timeLeft.hours : 0}{" "}
           </p>
         </div>
-        <span className="text-[#db4444] px-2 text-[26px] font-700">:</span>
-        <div className="flex flex-col gap-[5px] items-center">
-          <p className="text-[12px] font-[500] des:text-[16px]">minutes</p>
-          <p className="font-[700] text-[22px] des:text-[32px]">
+        <span className="countdownTimer-block-colon">:</span>
+        <div className="countdownTimer-block">
+          <p className="countdownTimer-block-para">minutes</p>
+          <p className="countdownTimer-block-para2 ">
             {timeLeft.minutes > 0 ? timeLeft.minutes : 0}
           </p>
         </div>
-        <span className="text-[#db4444] px-2 text-[26px] font-700">:</span>
-        <div className="flex flex-col gap-[5px] items-center">
-          <p className="text-[12px] font-[500] des:text-[16px]">seconds</p>
-          <p className="font-[700] text-[22px] des:text-[32px]">
+        <span className="countdownTimer-block-colon">:</span>
+        <div className="fcountdownTimer-block">
+          <p className="countdownTimer-block-para">seconds</p>
+          <p className="countdownTimer-block-para2 ">
             {timeLeft.seconds > 0 ? timeLeft.seconds : 0}
           </p>
         </div>

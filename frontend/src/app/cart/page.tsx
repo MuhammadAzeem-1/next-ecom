@@ -23,7 +23,7 @@ const Cart = () => {
 
       <div className="flex justify-center ">
         <table className="w-full flex flex-col py-4">
-          <tr className="hidden  tab:grid grid-cols-3 tab:grid-cols-4 place-content-center bg-white px-8 py-4 m-4 tab:text-[16px] shadow-lg">
+          <tr className="cart-box-shadow  hidden  tab:grid grid-cols-3 tab:grid-cols-4 place-content-center bg-white px-8 py-4 m-4 tab:text-[16px] ">
             <th className="font-500">Product</th>
             <th className="font-500">Price</th>
             <th className="font-500">Quantity</th>
@@ -34,7 +34,7 @@ const Cart = () => {
               <>
                 <tr
                   key={key}
-                  className="hidden tab:grid grid-cols-3 tab:grid-cols-4  justify-items-center shadow-lg		items-center bg-white px-8 py-4 m-4 tab:text-[16px] font-400"
+                  className="cart-box-shadow hidden tab:grid grid-cols-3 tab:grid-cols-4  justify-items-center 		items-center bg-white px-8 py-4 m-4 tab:text-[16px] font-400"
                 >
                   <td>
                     <div className="flex justify-center items-center gap-6">
@@ -70,7 +70,7 @@ const Cart = () => {
                   <td>${val.price * isAmount}</td>
                 </tr>
 
-                <div className="tab:hidden flex items-center shadow-lg bg-white p-4 my-4">
+                <div className="tab:hidden flex items-center cart-box-shadow  bg-white p-4 my-4">
                   <Image
                     src={"/assets/images/productImage.png"}
                     width={100}
